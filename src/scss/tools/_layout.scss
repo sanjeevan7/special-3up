@@ -1,0 +1,27 @@
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $fira;
+  padding-top: 65px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+

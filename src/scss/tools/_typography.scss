@@ -1,0 +1,43 @@
+// Font-sizes
+
+$font-normal: 400;
+$font-bold: 700;
+
+// Fonts
+$fira: 'Fira Sans Condensed', Helvetica Neue, Helvetica, Arial, sans-serif;
+
+@mixin title($color: $black) {
+  @include font(68px, 103%);
+
+  color: #{$color};
+  font-family: $fira;
+  font-weight: $font-bold;
+
+  @media (min-width: $sm) {
+    @include font(86px, null);
+  }
+
+  @media (min-width: $lg) {
+    @include font(116px, 105%);
+  }
+
+  @media (min-width: $xl){
+    @include font(134px, null);
+  }
+}
+
+// Content
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+  font-family: $fira;
+  font-weight: $font-bold;
+}
+
+a {
+  transition: $transition;
+}
